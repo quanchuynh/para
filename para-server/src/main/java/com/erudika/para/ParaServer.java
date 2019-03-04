@@ -329,7 +329,7 @@ public class ParaServer implements WebApplicationInitializer, Ordered {
 				}
 			}
 		});
-		int defaultPort = NumberUtils.toInt(System.getProperty("jetty.http.port", "8080"));
+		int defaultPort = NumberUtils.toInt(System.getProperty("jetty.http.port", "2990"));
 		jef.setPort(NumberUtils.toInt(System.getProperty("server.port"), defaultPort));
 		logger.info("Listening on port {}...", jef.getPort());
 		return jef;
